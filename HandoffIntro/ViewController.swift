@@ -23,6 +23,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate 
         userActivity?.becomeCurrent()
         userActivity?.eligibleForSearch = true
         userActivity?.eligibleForPublicIndexing = true
+        userActivity?.eligibleForHandoff = true
+        userActivity?.needsSave = true
     }
     
     override func viewDidAppear(animated: Bool) {
